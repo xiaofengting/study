@@ -1,4 +1,5 @@
 module.exports = {
+  base: "/study/",
   // 站点配置
   lang: 'zh-CN',
   title: 'rua',
@@ -15,7 +16,6 @@ module.exports = {
     sidebar: {
       '/wxmp': ['/wxmp/README.md', '/wxmp/base.md'],
       '/node': ['/node/README.md'],
-    },
-    lastUpdated: true
+    }
   }
 }
