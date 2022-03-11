@@ -38,7 +38,7 @@ actions:
   background-position: bottom left;
   transform-origin: bottom left;
   background-repeat: no-repeat;
-  background-image: url(images/rihe.png);
+  background-image: url(/images/rihe.png);
   transform: translate(0, 0);
   transition: transform 1s;
 }
@@ -52,7 +52,7 @@ actions:
   background-size: contain;
   background-position: bottom left;
   background-repeat: no-repeat;
-  background-image: url(images/shan.png);
+  background-image: url(/images/shan.png);
   animation: shanin-decoration 1s infinite;
 }
 html.dark {
