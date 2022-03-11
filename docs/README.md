@@ -9,14 +9,18 @@ actions:
     type: primary
 features:
   - title: VuePress
-    details: 学习使用 VuePress
+    details: 这是啥
   - title: 小程序
-    details: 学习使用 小程序
+    details: 这是啥
   - title: Node
-    details: 学习使用 Node
+    details: 这是啥
 footer: 睡觉
 ---
 
-
-
+<div class="page__decoration">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 

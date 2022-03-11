@@ -16,6 +16,8 @@ module.exports = {
     sidebar: {
       '/wxmp': ['/wxmp/README.md', '/wxmp/base.md'],
       '/node': ['/node/README.md'],
-    }
+    },
+    contributors: false,
+    lastUpdated: false
   }
 }
