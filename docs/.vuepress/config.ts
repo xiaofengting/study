@@ -14,7 +14,7 @@ module.exports = {
       { text: 'Node.js', link: '/node' },
     ],
     sidebar: {
-      '/wxmp': ['/wxmp/README.md', '/wxmp/base.md'],
+      '/wxmp': ['/wxmp/README.md', '/wxmp/base.md', '/wxmp/ss.md'],
       '/node': ['/node/README.md'],
     },
     contributors: false,

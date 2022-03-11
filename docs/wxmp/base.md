@@ -1,10 +1,8 @@
 ---
 lang: zh-CN
-title: 首先
-description: 首先
+title: 模板语法
+description: 模板语法
 ---
-
-### 模板语法
 
 数据绑定
 

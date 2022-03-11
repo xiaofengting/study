@@ -1,10 +1,8 @@
 ---
 lang: zh-CN
-title: 主页
+title: 项目结构
 description: 页面的描述
 ---
-
-入门
 
 
 每个页面由 4 个基本文件组成：  
