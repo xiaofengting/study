@@ -40,6 +40,38 @@
   }
 }
 
+@keyframes shake-decoration {
+  0% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes colored-font {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+@keyframes spotlight-font {
+  0% {
+    -webkit-clip-path: circle(60px at 0% 50%);
+    clip-path: circle(60px at 0% 50%);
+  }
+  50% {
+    -webkit-clip-path: circle(60px at 100% 50%);
+    clip-path: circle(60px at 100% 50%);
+  }
+  100% {
+    -webkit-clip-path: circle(60px at 0% 50%);
+    clip-path: circle(60px at 0% 50%);
+  }
+}
+
 .home .hero img {
   max-height: 240px;
 }
@@ -47,42 +79,31 @@
 .decoration-hang {
   position: fixed;
   top: 0;
-  perspective: 1000px;
-  transform-style: preserve-3d;
   width: 30px;
   &::before {
-    content: "";
     display: block;
-    margin-left: calc(50% - 0.5px);
     width: 1px;
-    background-color: #283c5f;
     height: calc(100% - 30px);
+    margin-left: calc(50% - 0.5px);
+    content: "";
+    background-color: #7a6a4d;
   }
   &::after {
-    content: "";
     display: block;
     width: 30px;
     height: 30px;
     margin-top: -5px;
+    content: "";
+    animation: rotate-decoration 6s linear 0s infinite;
     background-image: url(/images/star.svg);
+    background-repeat: no-repeat;
     background-position: center top;
     background-size: contain;
-    background-repeat: no-repeat;
-    animation: rotate-decoration 6s linear 0s infinite;
   }
 }
 
 .decoration-hang-moon {
   &::after {
     background-image: url(/images/moon.svg);
-  }
-}
-
-html.dark .decoration-hang {
-  &::before {
-    filter: invert(70%);
-  }
-  &::after {
-    filter: invert(200%);
   }
 }

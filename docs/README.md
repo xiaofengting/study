@@ -4,10 +4,10 @@ heroImage: images/hero.png
 heroText: 七海的小站
 tagline: 萌新
 actions:
-  - text: 微信小程序
-    link: /wxmp
-    type: primary
+  - text: CSS效果
+    link: /css_demo
 ---
+
 <style lang="scss" scoped>
 .hang-1 {
   left: 10%;
@@ -39,7 +39,6 @@ actions:
   transform-origin: bottom left;
   background-repeat: no-repeat;
   background-image: url(/images/rihe.png);
-  transform: translate(0, 0);
   transition: transform 1s;
 }
 .shan {

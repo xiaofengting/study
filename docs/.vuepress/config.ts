@@ -1,3 +1,26 @@
+
+const navbar = [
+  { text: '首页', link: '/' },
+  { text: 'CSS效果', link: '/css_demo/' },
+  { text: '微信小程序', link: '/wxmp/' },
+  // { text: 'Node.js', link: '/node/' },
+]
+
+const sidebar = {
+  '/wxmp': ['/wxmp/README.md'],
+  // '/node': ['/node/README.md'],
+  '/css_demo': [
+    '/css_demo/README.md',
+    '/css_demo/1-hangstar.md',
+    '/css_demo/2-title.md',
+    '/css_demo/3-popup.md',
+    '/css_demo/4-colorfont.md',
+    '/css_demo/5-spotlight.md',
+    '/css_demo/6-iphone.md',
+    '/css_demo/7-hover-menu.md',
+  ],
+}
+
 module.exports = {
   base: "/study/",
   // 站点配置
@@ -8,15 +31,8 @@ module.exports = {
   // 主题和它的配置
   theme: '@vuepress/theme-default',
   themeConfig: {
-    navbar: [
-      { text: '首页', link: '/' },
-      { text: '微信小程序', link: '/wxmp' },
-      { text: 'Node.js', link: '/node' },
-    ],
-    sidebar: {
-      '/wxmp': ['/wxmp/README.md', '/wxmp/base.md', '/wxmp/ss.md'],
-      '/node': ['/node/README.md'],
-    },
+    navbar,
+    sidebar,
     contributors: false,
     lastUpdated: false
   }
