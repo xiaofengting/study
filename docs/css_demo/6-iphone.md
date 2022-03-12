@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 6. 苹果设备切换展示
+title: 苹果设备切换展示
 sidebarDepth: 0
 ---
 
@@ -43,7 +43,7 @@ ipad、mini按钮实际是前两个元素，利用`~`控制 iphone按钮 和 设
 ```
 :::
 ::: code-group-item hover前样式
-```scss
+```css
 /* 基础样式 */
 .container {
   position: relative;
@@ -120,7 +120,7 @@ ipad、mini按钮实际是前两个元素，利用`~`控制 iphone按钮 和 设
 ```
 :::
 ::: code-group-item hover后样式
-```scss
+```css
 /* hover后 选择按钮样式 */
 .mini:hover,
 .ipad:hover {
@@ -162,7 +162,7 @@ ipad、mini按钮实际是前两个元素，利用`~`控制 iphone按钮 和 设
 ::::
 
 
-<style lang="scss" scoped>
+<style scoped>
 /* 基础样式 */
 .container {
   position: relative;

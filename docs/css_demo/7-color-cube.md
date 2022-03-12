@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 7. 上浮的方块背景
+title: 上浮的方块背景
 sidebarDepth: 0
 ---
 
@@ -165,8 +165,8 @@ sidebarDepth: 0
 </section>
 ```
 :::
-::: code-group-item SCSS
-```scss
+::: code-group-item CSS
+```css
 .square-container {
   height: 300px;
   width: 450px;
@@ -205,7 +205,7 @@ sidebarDepth: 0
 ::::
 
 
-<style lang="scss" scoped>
+<style scoped>
 .square-container {
   height: 300px;
   width: 450px;

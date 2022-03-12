@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 9. 彩色的loading
+title: 彩色的loading
 sidebarDepth: 0
 ---
 
@@ -75,8 +75,8 @@ sidebarDepth: 0
 </section>
 ```
 :::
-::: code-group-item SCSS
-```scss{19,30,111,115}
+::: code-group-item CSS
+```css{19,30,111,115}
 .color-loading-container {
   display: flex;
   height: 300px;
@@ -133,7 +133,7 @@ sidebarDepth: 0
 ::::
 
 
-<style lang="scss" scoped>
+<style scoped>
 .color-loading-container {
   display: flex;
   height: 300px;

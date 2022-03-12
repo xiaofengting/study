@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 2. title提示气泡
+title: title提示气泡
 sidebarDepth: 0
 ---
 
@@ -31,8 +31,8 @@ sidebarDepth: 0
 </p>
 ```
 :::
-::: code-group-item SCSS
-```scss{2,5}
+::: code-group-item CSS
+```css{2,5}
 .title-after {
   position: relative;
 }
@@ -54,7 +54,7 @@ sidebarDepth: 0
 ::::
 
 
-<style lang="scss" scoped>
+<style scoped>
 .title-after {
   position: relative;
 }

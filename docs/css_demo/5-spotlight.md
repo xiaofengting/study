@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 5. 彩色文字聚光灯
+title: 彩色文字聚光灯
 sidebarDepth: 0
 ---
 
@@ -23,10 +23,11 @@ sidebarDepth: 0
 不断改变圆心位置，实现聚光灯效果。  
 `circle(半径 at 圆心x轴位置, 圆心y轴位置)`
 
-<style lang="scss" scoped>
+<style scoped>
 .color-light {
   font-size: 60px;
   position: relative;
+  user-select: none;
   color: #333;
 }
 .color-light::after {
@@ -60,11 +61,12 @@ sidebarDepth: 0
 <p data-light="这是一行很长的文字" class="color-light">这是一行很长的文字</p>
 ```
 :::
-::: code-group-item SCSS
-```scss{7,10,11,26}
+::: code-group-item CSS
+```css{8,11,12,27}
 .color-light {
   font-size: 60px;
   position: relative;
+  user-select: none;
   color: #333;
 }
 .color-light::after {

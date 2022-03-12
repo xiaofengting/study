@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 4. 彩色文字
+title: 彩色文字
 sidebarDepth: 0
 ---
 
@@ -14,7 +14,7 @@ sidebarDepth: 0
 `background-image` 设置为彩虹色的线性渐变完成。
 
 
-<style lang="scss" scoped>
+<style scoped>
 .color-font {
   font-size: 60px;
   animation: colored-font 2s linear infinite alternate;
@@ -42,8 +42,8 @@ sidebarDepth: 0
 <p class="color-font">这是一行彩色文字</p>
 ```
 :::
-::: code-group-item SCSS
-```scss{3,15,16}
+::: code-group-item CSS
+```css{3,15,16}
 .color-font {
   font-size: 60px;
   animation: colored-font 2s linear infinite alternate;

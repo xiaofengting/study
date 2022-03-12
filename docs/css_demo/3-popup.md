@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 3. 弹框
+title: 弹框
 sidebarDepth: 0
 ---
 
@@ -33,8 +33,8 @@ sidebarDepth: 0
 </section>
 ```
 :::
-::: code-group-item SCSS
-```scss{1-3,9}
+::: code-group-item CSS
+```css{1-3,9}
 .popup-container:target {
   display: flex;
 }
@@ -64,7 +64,7 @@ sidebarDepth: 0
 ::::
 
 
-<style lang="scss" scoped>
+<style scoped>
 .popup-container:target {
   display: flex;
 }

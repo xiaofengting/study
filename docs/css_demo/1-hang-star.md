@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 1. 挂着的星星
+title: 挂着的星星
 sidebarDepth: 0
 ---
 
@@ -32,37 +32,35 @@ sidebarDepth: 0
 <div class="qiuqian"></div>
 ```
 :::
-::: code-group-item SCSS
-```scss
+::: code-group-item CSS
+```css
 .decoration-hang {
   position: fixed;
   top: 0;
   width: 30px;
-  &::before {
-    content: "";
-    display: block;
-    margin-left: calc(50% - 0.5px);
-    width: 1px;
-    background-color: #7a6a4d;
-    height: calc(100% - 30px);
-  }
-  &::after {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin-top: -5px;
-    background-image: url(/images/star.svg);
-    background-position: center top;
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: rotate-decoration 6s linear 0s infinite;
-  }
 }
-.decoration-hang-moon {
-  &::after {
-    background-image: url(/images/moon.svg);
-  }
+.decoration-hang::before {
+  content: "";
+  display: block;
+  margin-left: calc(50% - 0.5px);
+  width: 1px;
+  background-color: #7a6a4d;
+  height: calc(100% - 30px);
+}
+.decoration-hang::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-top: -5px;
+  background-image: url(/images/star.svg);
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: rotate-decoration 6s linear 0s infinite;
+}
+.decoration-hang-moon::after {
+  background-image: url(/images/moon.svg);
 }
 .hang-1 {
   right: 20%;
@@ -89,22 +87,20 @@ sidebarDepth: 0
   transform: rotate(-10deg);
   animation: shake-decoration 2s infinite alternate;
 }
-html.dark {
-  .qiuqian {
-    animation: none;
-    transform: translate(110%, -100%);
-  }
-  .hang-1 {
-    animation: down-decoration 0.6s ease 0.2s forwards;
-  }
-  .hang-2 {
-    animation: down-decoration 0.6s ease 0.4s forwards;
-  }
+html.dark .qiuqian {
+  animation: none;
+  transform: translate(110%, -100%);
+}
+html.dark .hang-1 {
+  animation: down-decoration 0.6s ease 0.2s forwards;
+}
+html.dark .hang-2 {
+  animation: down-decoration 0.6s ease 0.4s forwards;
 }
 ```
 :::
 ::: code-group-item keyframes
-```scss
+```css
 @keyframes rotate-decoration {
   from {
     transform: rotateY(0deg);
@@ -146,18 +142,16 @@ html.dark {
 ::::
 
 
-<style lang="scss" scoped>
-html.dark {
-  .qiuqian {
-    animation: none;
-    transform: translate(110%, -100%);
-  }
-  .hang-1 {
-    animation: down-decoration 0.6s ease 0.2s forwards;
-  }
-  .hang-2 {
-    animation: down-decoration 0.6s ease 0.4s forwards;
-  }
+<style scoped>
+html.dark .qiuqian {
+  animation: none;
+  transform: translate(110%, -100%);
+}
+html.dark .hang-1 {
+  animation: down-decoration 0.6s ease 0.2s forwards;
+}
+html.dark .hang-2 {
+  animation: down-decoration 0.6s ease 0.4s forwards;
 }
 .hang-1 {
   right: 20%;

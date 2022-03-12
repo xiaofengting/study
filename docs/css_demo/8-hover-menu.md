@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 8. 悬停文字菜单
+title: 悬停文字菜单
 sidebarDepth: 0
 ---
 
@@ -57,8 +57,8 @@ a标签中，color透明，`text-stroke`白色，有种字体镂空的效果。
 </ul>
 ```
 :::
-::: code-group-item SCSS
-```scss{10,11,22,29}
+::: code-group-item CSS
+```css{10,11,22,29}
 .colorful-menu li {
   position: relative;
   list-style: none;
@@ -97,7 +97,7 @@ html.dark .colorful-menu li a {
 ::::
 
 
-<style lang="scss" scoped>
+<style scoped>
 .colorful-menu li {
   position: relative;
   list-style: none;
