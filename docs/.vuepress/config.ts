@@ -19,6 +19,7 @@ const sidebar = {
     '/css_demo/6-iphone.md',
     '/css_demo/7-color-cube.md',
     '/css_demo/8-hover-menu.md',
+    '/css_demo/9-color-loading.md',
   ],
 }
 
