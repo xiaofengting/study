@@ -5,7 +5,7 @@ heroText: 七海的小站
 tagline: 萌新
 actions:
   - text: CSS效果
-    link: /css_demo
+    link: /css_demo/
 ---
 
 <style lang="scss" scoped>

@@ -4,7 +4,7 @@ title: 2. title提示气泡
 sidebarDepth: 0
 ---
 
-<p data-title="这里是很长的一段提示。这里是很长的一段提示。这里是很长的一段提示。这里是很长的一段提示" class="title-after">这是一行很长的文字</p>
+<p data-title="这里是很长的一段提示。这里是很长的一段提示。这里是很长的一段提示。这里是很长的一段提示" class="title-after">悬浮查看提示</p>
 
 **重点：**
 
@@ -27,7 +27,7 @@ sidebarDepth: 0
   data-title="这里是很长的一段提示。这里是很长的一段提示。这里是很长的一段提示。这里是很长的一段提示"
   class="title-after"
 >
-  这是一行很长的文字
+  悬浮查看提示
 </p>
 ```
 :::

@@ -1,21 +1,21 @@
 ---
 lang: zh-CN
-title: 7. 悬停文字菜单
+title: 8. 悬停文字菜单
 sidebarDepth: 0
 ---
 
 <ul class="colorful-menu">
   <li style="--clr: #00ade1">
-    <a href="#" data-text="&nbsp;HOME&nbsp;">&nbsp;HOME&nbsp;</a>
+    <a href="#" data-text="&nbsp;&nbsp;HOME&nbsp;">&nbsp;&nbsp;HOME&nbsp;</a>
   </li>
   <li style="--clr: #ffdd1c">
-    <a href="#" data-text="&nbsp;ABOUT&nbsp;">&nbsp;ABOUT&nbsp;</a>
+    <a href="#" data-text="&nbsp;&nbsp;ABOUT&nbsp;">&nbsp;&nbsp;ABOUT&nbsp;</a>
   </li>
   <li style="--clr: #00dc82">
-    <a href="#" data-text="&nbsp;SERVICES&nbsp;">&nbsp;SERVICES&nbsp;</a>
+    <a href="#" data-text="&nbsp;&nbsp;SERVICES&nbsp;">&nbsp;&nbsp;SERVICES&nbsp;</a>
   </li>
   <li style="--clr: #dc00d4">
-    <a href="#" data-text="&nbsp;CONTACT&nbsp;">&nbsp;CONTACT&nbsp;</a>
+    <a href="#" data-text="&nbsp;&nbsp;CONTACT&nbsp;">&nbsp;&nbsp;CONTACT&nbsp;</a>
   </li>
 </ul>
 
@@ -43,16 +43,16 @@ a标签中，color透明，`text-stroke`白色，有种字体镂空的效果。
 ```html{2,5,8,11}
 <ul class="colorful-menu">
   <li style="--clr: #00ade1">
-    <a href="#" data-text="&nbsp;HOME&nbsp;">&nbsp;HOME&nbsp;</a>
+    <a href="#" data-text="&nbsp;&nbsp;HOME&nbsp;">&nbsp;&nbsp;HOME&nbsp;</a>
   </li>
   <li style="--clr: #ffdd1c">
-    <a href="#" data-text="&nbsp;ABOUT&nbsp;">&nbsp;ABOUT&nbsp;</a>
+    <a href="#" data-text="&nbsp;&nbsp;ABOUT&nbsp;">&nbsp;&nbsp;ABOUT&nbsp;</a>
   </li>
   <li style="--clr: #00dc82">
-    <a href="#" data-text="&nbsp;SERVICES&nbsp;">&nbsp;SERVICES&nbsp;</a>
+    <a href="#" data-text="&nbsp;&nbsp;SERVICES&nbsp;">&nbsp;&nbsp;SERVICES&nbsp;</a>
   </li>
   <li style="--clr: #dc00d4">
-    <a href="#" data-text="&nbsp;CONTACT&nbsp;">&nbsp;CONTACT&nbsp;</a>
+    <a href="#" data-text="&nbsp;&nbsp;CONTACT&nbsp;">&nbsp;&nbsp;CONTACT&nbsp;</a>
   </li>
 </ul>
 ```
