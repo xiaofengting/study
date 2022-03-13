@@ -1,0 +1,16 @@
+.title-after {
+  position: relative;
+}
+.title-after:hover::after {
+  content: attr(data-title);
+  font-size: 14px;
+  position: absolute;
+  z-index: 1;
+  top: 24px;
+  left: 0;
+  max-width: 160px;
+  padding: 12px;
+  border: 1px #aaa solid;
+  border-radius: 10px;
+  background-color: #ffc;
+}

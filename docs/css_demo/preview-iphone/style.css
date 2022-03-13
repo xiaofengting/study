@@ -1,0 +1,108 @@
+/* 基础样式 */
+.container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.choice {
+  line-height: 32px;
+  position: absolute;
+  display: inline-block;
+  width: 80px;
+  height: 32px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+  color: silver;
+  border-radius: 10px;
+  background-color: #484f5e;
+}
+.iphone {
+  top: 0;
+  left: 0;
+  color: var(--c-brand);
+}
+.device {
+  top: 0;
+  left: 100px;
+}
+.mini {
+  top: 40px;
+  left: 0;
+}
+.ipad {
+  top: 80px;
+  left: 0;
+}
+.device,
+.device::before,
+.device::after {
+  transition: 0.4s cubic-bezier(0.5, 1.7, 0.5, 1.2);
+}
+.device {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 59px;
+  height: 124px;
+  margin: 0 auto;
+  border: solid #484f5e;
+  border-width: 18px 4px;
+  border-radius: 6px;
+  background: linear-gradient(120deg, #ddd 30%, #ccc 30%);
+}
+.device::before {
+  position: absolute;
+  top: -10px;
+  width: 2px;
+  height: 2px;
+  content: "";
+  border: solid #a5adbe;
+  border-width: 0 12px 0 2px;
+}
+.device::after {
+  position: absolute;
+  bottom: -13px;
+  width: 8px;
+  height: 8px;
+  content: "";
+  border-radius: 50%;
+  background-color: white;
+}
+/* hover后 选择按钮样式 */
+.mini:hover,
+.ipad:hover {
+  color: var(--c-brand);
+}
+.mini:hover ~ .iphone,
+.ipad:hover ~ .iphone {
+  color: silver !important;
+}
+/* hover后 苹果设备样式 */
+.mini:hover ~ .device {
+  width: 93px;
+  height: 138px;
+  border: solid #484f5e;
+  border-width: 14px 5px;
+  border-radius: 10px;
+}
+.mini:hover ~ .device::before {
+  top: -8px;
+}
+.mini:hover ~ .device::after {
+  bottom: -11px;
+}
+.ipad:hover ~ .device {
+  width: 134px;
+  height: 176px;
+  border: solid #484f5e;
+  border-width: 18px 13px;
+  border-radius: 12px;
+}
+.ipad:hover ~ .device::before {
+  top: -10px;
+}
+.ipad:hover ~ .device::after {
+  bottom: -13px;
+}
