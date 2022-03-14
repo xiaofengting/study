@@ -44,6 +44,7 @@ const sidebar = {
   '/css_collection': [
     '/css_collection/README.md',
     '/css_collection/loading/index.md',
+    '/css_collection/loading2/index.md',
   ],
 }
 

@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: loading合集
+title: loading合集1
 ---
 
 ## 线填充文字loading
@@ -60,19 +60,19 @@ html.dark .loading-text-1 {
 <style>
 @keyframes loading-square-sandglass {
   0% {
-    transform: translate(-50%, -50%) rotate(0deg);
+    transform: rotate(0deg);
   }
   25% {
-    transform: translate(-50%, -50%) rotate(180deg);
+    transform: rotate(180deg);
   }
   50% {
-    transform: translate(-50%, -50%) rotate(180deg);
+    transform: rotate(180deg);
   }
   75% {
-    transform: translate(-50%, -50%) rotate(360deg);
+    transform: rotate(360deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes loading-square-sandglass-bg {
@@ -96,9 +96,6 @@ html.dark .loading-text-1 {
 <style scoped>
 .loading-square-sandglass {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   border: 3px solid #262626;
@@ -120,6 +117,97 @@ html.dark .loading-square-sandglass {
 }
 html.dark .loading-square-sandglass::before {
   background-color: #fff;
+}
+</style>
+
+
+## 蛇形边框loading
+
+<div class="loading-container loading-snake-container">
+  <div class="loading-snake-border">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<style>
+@keyframes loading-snake-border {
+  0% {
+    left: -100%;
+  }
+  25% {
+    left: 0;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+@keyframes loading-snake-rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+</style>
+
+<style scoped>
+.loading-snake-container {
+  background: linear-gradient(45deg, #cfffd0, #3fff46);
+}
+.loading-snake-border {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  animation: loading-snake-rotate 8s linear infinite;
+  border: 10px dashed rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, .5),
+              inset 0 0 0 10px rgba(0, 0, 0, .4);
+}
+.loading-snake-border span {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.loading-snake-border span::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-top: 10px solid #fff;
+  left: -100%;
+  animation: loading-snake-border 2s linear infinite;
+}
+.loading-snake-border span:nth-child(1) {
+  transform: rotate(0deg);
+}
+.loading-snake-border span:nth-child(2) {
+  transform: rotate(90deg);
+}
+.loading-snake-border span:nth-child(3) {
+  transform: rotate(180deg);
+}
+.loading-snake-border span:nth-child(4) {
+  transform: rotate(270deg);
+}
+.loading-snake-border span:nth-child(1)::before {
+  animation-delay: 0s;
+}
+.loading-snake-border span:nth-child(2)::before {
+  animation-delay: 0.5s;
+}
+.loading-snake-border span:nth-child(3)::before {
+  animation-delay: 1s;
+}
+.loading-snake-border span:nth-child(4)::before {
+  animation-delay: 1.5s;
 }
 </style>
 
@@ -148,9 +236,6 @@ html.dark .loading-square-sandglass::before {
 <style scoped>
 .loading-3d-3square {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 150px;
   height: 150px;
   perspective: 600px;
@@ -198,6 +283,47 @@ html.dark .loading-square-sandglass::before {
   right: 40px;
   bottom: 40px;
   animation: loading-3d-3square 2s linear infinite;
+}
+</style>
+
+
+## 文字配环loading
+
+<div class="loading-container" style="height: 320px; width: 320px; overflow: hidden;">
+  <div class="loading-text-in-ring-text">loading</div>
+  <div class="loading-text-in-ring"></div>
+</div>
+
+<style scoped>
+.loading-text-in-ring {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 #262626;
+  background: transparent;
+  animation: rotate360 1s linear infinite;
+}
+.loading-text-in-ring-text {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  color: #262626;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  text-align: center;
+  font-size: 36px;
+  background-color: transparent;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+  line-height: 200px;
+  text-transform: uppercase;
+}
+html.dark .loading-text-in-ring {
+  box-shadow: 0 4px 0 #fff;
+}
+html.dark .loading-text-in-ring-text {
+  color: #fff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, .2);
 }
 </style>
 
@@ -400,7 +526,7 @@ html.dark .loading-glow-ring::before {
 </div>
 
 <style>
-@keyframes loading-glass-circle-two {
+@keyframes rotate360 {
   0% {
     transform: rotate(0deg);
   }
@@ -437,7 +563,7 @@ html.dark .loading-glow-ring::before {
   border-radius: 50%;
   z-index: 1;
   overflow: hidden;
-  animation: loading-glass-circle-two 1s linear infinite;
+  animation: rotate360 1s linear infinite;
 }
 .loading-glass-circle-2 span:nth-child(2)::before {
   content: '';
