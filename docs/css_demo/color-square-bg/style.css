@@ -1,4 +1,4 @@
-@keyframes color-cube-bg-up {
+@keyframes color-square-bg-up {
   0% {
     transform: scale(0) translateY(0) rotate(0deg);
     opacity: 0;
@@ -21,12 +21,12 @@
   position: relative;
 }
 .square {
-  width: var(--cube-width);
-  height: var(--cube-width);
-  top: var(--cube-top);
-  left: var(--cube-left);
+  width: var(--square-width);
+  height: var(--square-width);
+  top: var(--square-top);
+  left: var(--square-left);
   position: absolute;
   pointer-events: none;
-  background-color: var(--cube-clr);
-  animation: color-cube-bg-up 5s linear infinite;
+  background-color: var(--square-clr);
+  animation: color-square-bg-up 5s linear infinite;
 }

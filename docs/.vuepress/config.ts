@@ -26,6 +26,7 @@ const sidebar = {
       children: [
         '/css_demo/line-text-loading/index.md',
         '/css_demo/glow-ring-loading/index.md',
+        '/css_demo/square-sandglass-loading/index.md',
         '/css_demo/color-loading/index.md',
         '/css_demo/glassmorphism-loading/index.md',
         '/css_demo/glassmorphism-loading-2/index.md',
@@ -33,7 +34,7 @@ const sidebar = {
       ],
     },
     '/css_demo/preview-iphone/index.md',
-    '/css_demo/color-cube-bg/index.md',
+    '/css_demo/color-square-bg/index.md',
     '/css_demo/menu-hover-line/index.md',
     '/css_demo/menu-hover-bg/index.md',
     '/css_demo/css-tooltip/index.md',
