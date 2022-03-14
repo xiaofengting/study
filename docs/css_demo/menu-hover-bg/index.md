@@ -27,12 +27,11 @@ sidebarDepth: 0
 <style scoped>
 .menu-bg-container {
   position: relative;
-  width: 450px;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 1;
 }
 .menu-bg-container ul {
   display: flex;

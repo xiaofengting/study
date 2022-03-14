@@ -27,7 +27,6 @@ sidebarDepth: 0
   justify-content: center;
   align-items: center;
   height: 300px;
-  width: 300px;
 }
 .glow-ring-loading {
   position: relative;
@@ -71,7 +70,11 @@ html.dark .glow-ring-loading::before {
 
 **重点：**
 
-1. 
+1. `::before`和`::after`巧用。
+
+`::before`负责中间的黑色部分，遮挡剩余部分实现圆环效果。  
+元素本体负责从有色到透明的线性渐变的圆。  
+`::after`负责最外层的模糊。
 
 
 :::: code-group

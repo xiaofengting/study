@@ -101,7 +101,6 @@ sidebarDepth: 0
 <style scoped>
 .square-container {
   height: 300px;
-  width: 450px;
   overflow: hidden;
   position: relative;
 }

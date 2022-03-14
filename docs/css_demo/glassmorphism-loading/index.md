@@ -25,15 +25,14 @@ sidebarDepth: 0
 <style scoped>
 .glass-container {
   height: 300px;
-  width: 410px;
   background-color: #eafdff;
   padding-top: 10px;
 }
 .glass-loader {
   position: relative;
-  width: 150px;
-  height: 150px;
-  margin: 50px 130px 100px;
+  width: 120px;
+  height: 120px;
+  margin: 50px 100px 100px;
 }
 .glass-loader span {
   position: absolute;

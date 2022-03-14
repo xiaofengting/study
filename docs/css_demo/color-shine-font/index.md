@@ -11,11 +11,9 @@ sidebarDepth: 0
     <span class="font-letter" style="--idx:3;">l</span>
     <span class="font-letter" style="--idx:4;">l</span>
     <span class="font-letter" style="--idx:5;">o</span>
-    <span class="font-letter" style="--idx:6; margin-left: 10px;">w</span>
-    <span class="font-letter" style="--idx:7;">o</span>
-    <span class="font-letter" style="--idx:8;">r</span>
-    <span class="font-letter" style="--idx:9;">l</span>
-    <span class="font-letter" style="--idx:10;">d</span>
+    <span class="font-letter" style="--idx:6; margin-left: 10px;">c</span>
+    <span class="font-letter" style="--idx:7;">s</span>
+    <span class="font-letter" style="--idx:8;">s</span>
   </h2>
 </div>
 
@@ -28,8 +26,7 @@ sidebarDepth: 0
     0 0 20px #00b3ff,
     0 0 40px #00b3ff,
     0 0 80px #00b3ff,
-    0 0 120px #00b3ff,
-    0 0 200px #00b3ff;
+    0 0 120px #00b3ff;
   }
   30%, 70% {
     color: #fff;
@@ -38,8 +35,7 @@ sidebarDepth: 0
     0 0 20px #00b3ff,
     0 0 40px #00b3ff,
     0 0 80px #00b3ff,
-    0 0 120px #00b3ff,
-    0 0 200px #00b3ff;
+    0 0 120px #00b3ff;
   }
   100% {
     color: transparent;
@@ -54,7 +50,6 @@ sidebarDepth: 0
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
   height: 300px;
   font-family: BadScript, cursive;
 }

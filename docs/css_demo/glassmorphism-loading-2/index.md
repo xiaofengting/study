@@ -25,7 +25,6 @@ sidebarDepth: 0
 <style scoped>
 .glass-container {
   height: 300px;
-  width: 410px;
   background-color: #eafdff;
   padding-top: 40px;
   display: flex;

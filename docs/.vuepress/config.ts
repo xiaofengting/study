@@ -15,6 +15,7 @@ const sidebar = {
     '/css_demo/animate-hang-star/index.md',
     {
       text: '文字特效',
+      link: '/css_demo/color-font/index.md',
       children: [
         '/css_demo/color-font/index.md',
         '/css_demo/color-spotlight/index.md',
@@ -23,6 +24,7 @@ const sidebar = {
     },
     {
       text: 'loading特效',
+      link: '/css_demo/line-text-loading/index.md',
       children: [
         '/css_demo/line-text-loading/index.md',
         '/css_demo/glow-ring-loading/index.md',

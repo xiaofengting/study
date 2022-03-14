@@ -48,7 +48,6 @@ sidebarDepth: 0
 <style scoped>
 .loader-container {
   position: relative;
-  width: 400px;
   height: 200px;
 }
 .loader {
@@ -83,7 +82,9 @@ html.dark .loader::before {
 
 **重点：**
 
-1. 
+1. Chrome上不知为何有 `::after` 与border有空隙。
+
+使用 `margin: -1px;` 填补空隙。
 
 
 :::: code-group
