@@ -3,6 +3,7 @@ const navbar = [
   { text: '首页', link: '/' },
   { text: 'CSS奇技淫巧', link: '/css_demo/' },
   { text: '微信小程序', link: '/wxmp/' },
+  { text: 'github', link: 'https://github.com/xiaofengting/study' }
   // { text: 'Node.js', link: '/node/' },
 ]
 
@@ -12,16 +13,29 @@ const sidebar = {
   '/css_demo': [
     '/css_demo/README.md',
     '/css_demo/animate-hang-star/index.md',
-    '/css_demo/color-font/index.md',
-    '/css_demo/color-spotlight/index.md',
+    {
+      text: '文字特效',
+      children: [
+        '/css_demo/color-font/index.md',
+        '/css_demo/color-spotlight/index.md',
+        '/css_demo/color-shine-font/index.md',
+      ],
+    },
+    {
+      text: 'loading特效',
+      children: [
+        '/css_demo/line-text-loading/index.md',
+        '/css_demo/glow-ring-loading/index.md',
+        '/css_demo/color-loading/index.md',
+        '/css_demo/glassmorphism-loading/index.md',
+        '/css_demo/glassmorphism-loading-2/index.md',
+        '/css_demo/cube-climb-loading/index.md',
+      ],
+    },
     '/css_demo/preview-iphone/index.md',
     '/css_demo/color-cube-bg/index.md',
     '/css_demo/menu-hover-line/index.md',
     '/css_demo/menu-hover-bg/index.md',
-    '/css_demo/color-loading/index.md',
-    '/css_demo/color-shine-font/index.md',
-    '/css_demo/glassmorphism-loading/index.md',
-    '/css_demo/glassmorphism-loading-2/index.md',
     '/css_demo/css-tooltip/index.md',
     '/css_demo/css-popup/index.md',
     '/css_demo/css-slide/index.md',
@@ -41,6 +55,6 @@ module.exports = {
     navbar,
     sidebar,
     contributors: false,
-    lastUpdated: false
-  }
+    lastUpdated: false,
+  },
 }

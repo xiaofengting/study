@@ -1,7 +1,7 @@
 .menu-bg-container {
   position: relative;
-  width: 450px;
-  height: 200px;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +37,7 @@
   font-size: 3em;
   color: #2196f3;
   opacity: 0;
-  line-height: 200px;
+  line-height: 100vh;
   transition: 0.5s;
 }
 .menu-bg-item:hover a::before {

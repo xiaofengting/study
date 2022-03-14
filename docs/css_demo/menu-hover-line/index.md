@@ -65,7 +65,7 @@ html.dark .colorful-menu li a {
 本例中，四个菜单项设置了同名的CSS变量`--clr`表示颜色，但值不同。  
 用在了 `::before` 的字体颜色、文字描边颜色、右边框颜色、`drop-shadow`阴影颜色。
 
-2. `text-stroke` 文字描边效果
+2. `-webkit-text-stroke` 文字描边效果
 
 a标签中，color透明，`text-stroke`白色，有种字体镂空的效果。  
 `::before`中，color和`text-stroke`同色，有种字体加粗的效果。

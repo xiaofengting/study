@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 300px;
+  width: 100vw;
+  height: 100vh;
   font-family: BadScript, cursive;
 }
 .font-container h2 {

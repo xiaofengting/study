@@ -16,7 +16,7 @@
 }
 .color-loading-container {
   display: flex;
-  height: 300px;
+  height: 100vh;
   animation: color-loading-bg 10s linear infinite;
   align-items: center;
   justify-content: center;
