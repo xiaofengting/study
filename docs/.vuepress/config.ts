@@ -1,15 +1,13 @@
 
 const navbar = [
   { text: '首页', link: '/' },
-  { text: 'CSS奇技淫巧', link: '/css_demo/' },
-  { text: '微信小程序', link: '/wxmp/' },
+  { text: '纯CSS', link: '/css_demo/' },
+  { text: '纯CSS合集', link: '/css_collection/' },
   { text: 'github', link: 'https://github.com/xiaofengting/study' }
   // { text: 'Node.js', link: '/node/' },
 ]
 
 const sidebar = {
-  '/wxmp': ['/wxmp/README.md'],
-  // '/node': ['/node/README.md'],
   '/css_demo': [
     '/css_demo/README.md',
     '/css_demo/animate-hang-star/index.md',
@@ -42,6 +40,10 @@ const sidebar = {
     '/css_demo/css-tooltip/index.md',
     '/css_demo/css-popup/index.md',
     '/css_demo/css-slide/index.md',
+  ],
+  '/css_collection': [
+    '/css_collection/README.md',
+    '/css_collection/loading/index.md',
   ],
 }
 

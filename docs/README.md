@@ -4,7 +4,7 @@ heroImage: images/hero.png
 heroText: 七海的小站
 tagline: 萌新
 actions:
-  - text: CSS奇技淫巧
+  - text: 纯CSS
     link: /css_demo/
 ---
 
