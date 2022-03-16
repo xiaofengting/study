@@ -1,46 +1,12 @@
 
 const navbar = [
   { text: '首页', link: '/' },
-  { text: '纯CSS', link: '/css_demo/' },
   { text: '纯CSS合集', link: '/css_collection/' },
   { text: 'github', link: 'https://github.com/xiaofengting/study' }
   // { text: 'Node.js', link: '/node/' },
 ]
 
 const sidebar = {
-  '/css_demo': [
-    '/css_demo/README.md',
-    '/css_demo/animate-hang-star/index.md',
-    {
-      text: '文字特效',
-      link: '/css_demo/color-font/index.md',
-      children: [
-        '/css_demo/color-font/index.md',
-        '/css_demo/color-spotlight/index.md',
-        '/css_demo/color-shine-font/index.md',
-      ],
-    },
-    {
-      text: 'loading特效',
-      link: '/css_demo/line-text-loading/index.md',
-      children: [
-        '/css_demo/line-text-loading/index.md',
-        '/css_demo/glow-ring-loading/index.md',
-        '/css_demo/square-sandglass-loading/index.md',
-        '/css_demo/color-loading/index.md',
-        '/css_demo/glassmorphism-loading/index.md',
-        '/css_demo/glassmorphism-loading-2/index.md',
-        '/css_demo/cube-climb-loading/index.md',
-      ],
-    },
-    '/css_demo/preview-iphone/index.md',
-    '/css_demo/color-square-bg/index.md',
-    '/css_demo/menu-hover-line/index.md',
-    '/css_demo/menu-hover-bg/index.md',
-    '/css_demo/css-tooltip/index.md',
-    '/css_demo/css-popup/index.md',
-    '/css_demo/css-slide/index.md',
-  ],
   '/css_collection': [
     '/css_collection/README.md',
     '/css_collection/loading/index.md',
