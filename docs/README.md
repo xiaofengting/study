@@ -4,8 +4,12 @@ heroImage: images/hero.png
 heroText: 七海的小站
 tagline: 萌新
 actions:
+  - text: 程序员面试金典
+    link: /ts_leetcode/
+    type: 'secondary'
   - text: 纯CSS
-    link: /css_demo/
+    link: /css_collection/
+    type: 'secondary'
 ---
 
 <style lang="scss" scoped>

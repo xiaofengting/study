@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: loading合集1
+title: loading合集
 ---
 
 ## 线填充文字loading

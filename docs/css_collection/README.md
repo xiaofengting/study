@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 纯CSS合集
+title: 说明
 sidebarDepth: 0
 ---
 
