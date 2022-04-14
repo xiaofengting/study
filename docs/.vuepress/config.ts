@@ -35,7 +35,7 @@ const sidebar = {
 module.exports = {
   base: "/study/",
   // 站点配置
-  lang: 'zh-CN',
+  lang: 'zh',
   title: 'rua',
   description: '七海的小站',
 

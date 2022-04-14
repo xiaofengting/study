@@ -1,5 +1,4 @@
 ---
-lang: zh-CN
 title: 说明
 sidebarDepth: 0
 ---
