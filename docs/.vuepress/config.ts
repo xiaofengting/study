@@ -1,3 +1,5 @@
+import { defineUserConfig } from 'vuepress'
+const { defaultTheme } = require('vuepress')
 
 const navbar = [
   { text: '首页', link: '/' },
@@ -12,8 +14,8 @@ const navbar = [
 const fs = require("fs");
 const path = require("path");
 const files = fs.readdirSync(path.resolve(__dirname, '../ts_leetcode'))
-let filearr = []
-files.forEach(function (item) {
+let filearr: string[] = []
+files.forEach((item: string) => {
   filearr.push(item)
 })
 filearr.sort((a, b) => {
@@ -32,19 +34,19 @@ const sidebar = {
   ],
 }
 
-module.exports = {
+export default defineUserConfig({
   base: "/try_vuepress_note/",
   // 站点配置
   lang: 'zh',
   title: 'rua',
   description: '七海的小站',
-
   // 主题和它的配置
-  theme: '@vuepress/theme-default',
-  themeConfig: {
-    navbar,
-    sidebar,
-    contributors: false,
-    lastUpdated: false,
-  },
-}
+  theme: defaultTheme(
+    {
+      navbar,
+      sidebar,
+      contributors: false,
+      lastUpdated: false,
+    }
+  ),
+})
