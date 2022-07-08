@@ -33,7 +33,7 @@ const sidebar = {
 }
 
 module.exports = {
-  base: "/study/",
+  base: "/try_vuepress_note/",
   // 站点配置
   lang: 'zh',
   title: 'rua',
