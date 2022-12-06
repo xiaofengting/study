@@ -3,10 +3,10 @@ const { defaultTheme } = require('vuepress')
 
 const navbar = [
   { text: '首页', link: '/' },
-  { text: '程序员面试金典', link: '/ts_leetcode/' },
+  // { text: '程序员面试金典', link: '/ts_leetcode/' },
   { text: '纯CSS', link: '/css_collection/' },
-  { text: '主页', link: 'https://xiaofengting.github.io/css_animation/' },
-  { text: 'nikki', link: 'https://xiaofengting.github.io/nikki-photo/' },
+  // { text: '主页', link: 'https://xiaofengting.github.io/css_animation/' },
+  // { text: 'nikki', link: 'https://xiaofengting.github.io/nikki-photo/' },
   { text: 'github', link: 'https://github.com/xiaofengting/study' }
   // { text: 'Node.js', link: '/node/' },
 ]
