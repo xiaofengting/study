@@ -1,0 +1,1 @@
+import{_,o as t,c as a,b as e}from"./app.f886be28.js";const s={},c=e("div",{class:"div-wave"},[e("div",{class:"div-text"},"A Css Wave")],-1),o=[c];function v(l,n){return t(),a("div",null,o)}var d=_(s,[["render",v],["__file","wave.html.vue"]]);export{d as default};
